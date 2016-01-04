@@ -5,7 +5,21 @@ $(function(){
 	var $item = $('#item');
 
 	//GET REQUEST
-
+	$.ajax({
+		type: 'GET',
+		url: 'http://rest.learncode.academy/api/msolorio/orders',
+		success: function(oldOrders) {
+			$.each(oldOrders, function(i, order) {
+				$currentOrders.append(
+					'<li class="current-order-single">Name: '+order.name+', '+
+					'Item: '+order.item+'</li>'
+				);
+			});
+		},
+		error: function() {
+			alert('error loading orders');
+		}
+	});
 
 	$('#add-order').on('click', function(){
 		var order = {
