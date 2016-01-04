@@ -4,16 +4,20 @@ $(function(){
 	var $name = $('#name');
 	var $item = $('#item');
 
+	function populateOrder(order) {
+		$currentOrders.append(
+			'<li class="current-order-single">Name: '+order.name+', '+
+			'Item: '+order.item+'</li>'
+		);
+	}
+
 	//GET REQUEST
 	$.ajax({
 		type: 'GET',
 		url: 'http://rest.learncode.academy/api/msolorio1/orders',
 		success: function(oldOrders) {
-			$.each(oldOrders, function(i, order) {
-				$currentOrders.append(
-					'<li class="current-order-single">Name: '+order.name+', '+
-					'Item: '+order.item+'</li>'
-				);
+			$.each(oldOrders, function(i, oldOrder) {
+				populateOrder(oldOrder);
 			});
 		},
 		error: function() {
@@ -33,10 +37,7 @@ $(function(){
 			url: 'http://rest.learncode.academy/api/msolorio1/orders',
 			data: order,
 			success: function(newOrder){
-				$currentOrders.append(
-					'<li class="current-order-single">Name: '+newOrder.name+', '+
-					'Item: '+newOrder.item+'</li>'
-					);
+				populateOrder(newOrder);
 			},
 			error: function(){
 				alert('error saving new order');
