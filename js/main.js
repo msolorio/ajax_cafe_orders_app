@@ -7,7 +7,7 @@ $(function(){
 	//GET REQUEST
 	$.ajax({
 		type: 'GET',
-		url: 'http://rest.learncode.academy/api/msolorio/orders',
+		url: 'http://rest.learncode.academy/api/msolorio1/orders',
 		success: function(oldOrders) {
 			$.each(oldOrders, function(i, order) {
 				$currentOrders.append(
