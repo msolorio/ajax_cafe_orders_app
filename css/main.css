@@ -30,7 +30,7 @@ ADD ORDER
 .add-order-input {
 
 }
-button#add-order {
+#add-order {
 	background: rgb(90, 173, 85);
 	color: #fff;
 	border: 2px solid #2F4C27;
