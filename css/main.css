@@ -17,6 +17,13 @@ CURRENT ORDERS
 ****************************/
 .current-orders {list-style-type: none;padding: 0;margin: 0;}
 .current-order-single {background: #ccc;margin: 8px 0;padding: 13px;width: 430px;}
+.cross {
+	float: right;
+	font-size: 2.6em;
+	position: relative;
+	top: -8px;
+	cursor:pointer;
+}
 
 /****************************
 ADD ORDER
