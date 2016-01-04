@@ -30,7 +30,7 @@ $(function(){
 		//POST REQUEST
 		$.ajax({
 			type: 'POST',
-			url: 'http://rest.learncode.academy/api/msolorio/orders',
+			url: 'http://rest.learncode.academy/api/msolorio1/orders',
 			data: order,
 			success: function(newOrder){
 				$currentOrders.append(
