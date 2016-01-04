@@ -4,7 +4,7 @@ $(function(){
 	var $name = $('#name');
 	var $item = $('#item');
 
-	var orderTemplate = "<li>Name: {{name}}, Item: {{item}}</li>";
+	var orderTemplate = "<li class='current-order-single'>Name: {{name}}, Item: {{item}}</li>";
 
 	function populateOrder(order) {
 		$currentOrders.append(Mustache.render(orderTemplate, order));
