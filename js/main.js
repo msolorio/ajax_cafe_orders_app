@@ -18,8 +18,14 @@ $(function(){
 			type: 'POST',
 			url: 'http://rest.learncode.academy/api/msolorio/orders',
 			data: order,
-			success: function(){
-				alert('the post request was successful');
+			success: function(newOrder){
+				$currentOrders.append(
+					'<li class="current-order-single">Name: '+newOrder.name+', '+
+					'Item: '+newOrder.item+'</li>'
+					);
+			},
+			error: function(){
+				alert('error saving new order');
 			}
 		});
 	});
