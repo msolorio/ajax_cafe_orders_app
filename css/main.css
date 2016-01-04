@@ -1,0 +1,38 @@
+/****************************
+GENERAL STYLES
+****************************/
+.section-wrap {max-width: 1140px;margin: 0 auto;padding: .5% 4% 4%;}
+.h2 {
+
+}
+.h4 {margin-top: 39px;}
+.col {
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/****************************
+CURRENT ORDERS
+****************************/
+.current-orders {list-style-type: none;padding: 0;margin: 0;}
+.current-order-single {background: #ccc;margin: 8px 0;padding: 13px;width: 430px;}
+
+/****************************
+ADD ORDER
+****************************/
+.add-order-p {
+
+}
+.add-order-label {
+
+}
+.add-order-input {
+
+}
+button#add-order {
+	background: rgb(90, 173, 85);
+	color: #fff;
+	border: 2px solid #2F4C27;
+	padding: 10px;
+}

@@ -3,22 +3,35 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Ajax Application - 01032015-3</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<h2>Emiliano's Cafe</h2>
 
-	<h4>Current Customer Orders</h4>
-	<ul class="orders">
-		<li class="order">Americano w/ Creme 1</li>
-		<li class="order">Americano w/ Creme 2</li>
-		<li class="order">Americano w/ Creme 3</li>
-		<li class="order">Americano w/ Creme 4</li>
-		<li class="order">Americano w/ Creme 5</li>
-	</ul>
+	<div class="section-wrap">
+	<h2 class="h2">Emiliano's Cafe</h2>
 
-	<h4>Add an Order</h4>
-	<p class="add-order-p">Customer Name: <input type="text" class="add-order-input" id="name" size="30"></p>
-	<p class="add-order-p">Customer Order: <input type="text" class="add-order-input" id="order-item" size="30"></p>
-	<button id="add-order">Add Order</button>
+		<div class="col">
+			<h4 class="h4">Current Customer Orders</h4>
+			<ul class="current-orders">
+				<li class="current-order-single">Name: Prescilla, Order: Americano w/ Creme 1</li>
+				<li class="current-order-single">Name: Prescilla, Order: Americano w/ Creme 2</li>
+				<li class="current-order-single">Name: Prescilla, Order: Americano w/ Creme 3</li>
+				<li class="current-order-single">Name: Prescilla, Order: Americano w/ Creme 4</li>
+				<li class="current-order-single">Name: Prescilla, Order: Americano w/ Creme 5</li>
+			</ul>
+		</div>
+	
+
+	<div class="col">
+		<h4 class="h4">Add an Order</h4>
+		<p class="add-order-p"><span class="add-order-label">Name: </span><input type="text" class="add-order-input" id="name" size="30"></p>
+
+		<p class="add-order-p"><span class="add-order-label">Order: </span><input type="text" class="add-order-input" id="item" size="30"></p>
+
+		<button id="add-order">Add Order</button>
+	</div>
+
+	</div>
 </body>
 </html>
