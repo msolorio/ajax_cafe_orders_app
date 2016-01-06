@@ -1,36 +1,63 @@
 /****************************
 GENERAL STYLES
 ****************************/
-body {background: #F7F8F8;}
 
-.section-wrap {max-width: 1140px;margin: 0 auto;padding: .5% 4% 4%;}
-.h4 {margin-top: 39px;}
-.col {
-	width: 49%;
-	width: 566px;
-	max-width: 100%;
-	display: inline-block;
-	vertical-align: top;
+body {
+    background: #F7F8F8;
 }
+
+.section-wrap {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: .5% 4% 4%;
+}
+
+.h4 {
+    margin-top: 39px;
+}
+
+.col {
+    width: 49%;
+    width: 566px;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
 
 /****************************
 CURRENT ORDERS
 ****************************/
-.current-orders {list-style-type: none;padding: 0;margin: 0;}
-.current-order-single {background: #E2E4E4;margin: 8px 0;padding: 13px;width: 430px;max-width: 92%;}
-.cross {
-	float: right;
-	font-size: 2.6em;
-	position: relative;
-	top: -8px;
+
+.current-orders {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
+
+.current-order-single {
+    background: #E2E4E4;
+    margin: 8px 0;
+    padding: 13px;
+    width: 430px;
+    max-width: 92%;
+}
+
+.cross {
+    float: right;
+    font-size: 2.6em;
+    position: relative;
+    top: -8px;
+}
+
 
 /****************************
 ADD ORDER
 ****************************/
+
 #add-order {
-	background: rgb(90, 173, 85);
-	color: #fff;
-	border: 2px solid #2F4C27;
-	padding: 10px;
+    background: rgb(90, 173, 85);
+    color: #fff;
+    border: 2px solid #2F4C27;
+    padding: 10px;
 }
