@@ -1,18 +1,16 @@
-@import "normalize.min.css";
+@import "normalize.min.less";
+@import "colors.less";
+
 /****************************
 GENERAL STYLES
 ****************************/
 
-@light-grey: #F7F8F8;
-@medium-grey: #E2E4E4;
-@dark-grey: #2f2f2f;
-@medium-green: rgb(90, 173, 85);
-@dark-green: #2F4C27;
-
+@baseFontSize: 1em;
 
 body {
-    background: @light-grey;
-    color:@dark-grey;
+    background: @lightGrey;
+    color: @darkGrey;
+    font-size: @baseFontSize;
 }
 
 .section-wrap {
@@ -20,9 +18,13 @@ body {
     margin: 0 auto;
     padding: .5% 4% 4%;
 }
+.h2 {
+	font-size: @baseFontSize * 1.5;
+}
 
 .h4 {
     margin-top: 39px;
+    font-size: @baseFontSize * 1.2;
 }
 
 .col {
@@ -45,7 +47,7 @@ CURRENT ORDERS
 }
 
 .current-order-single {
-    background: @medium-grey;
+    background: @mediumGrey;
     margin: 8px 0;
     padding: 13px;
     width: 430px;
@@ -54,20 +56,24 @@ CURRENT ORDERS
 
 .cross {
     float: right;
-    font-size: 2.6em;
+    font-size: @baseFontSize * 2.6;
     position: relative;
-    top: -8px;
+    line-height:.4em;
+    top: 8px;
     cursor:pointer;
 }
-
+.add-order-label {
+	width:52px;
+	display:inline-block;
+}
 
 /****************************
 ADD ORDER
 ****************************/
 
 #add-order {
-    background: @medium-green;
+    background: @mediumGreen;
     color: #fff;
-    border: 2px solid @dark-green;
+    border: 2px solid @darkGreen;
     padding: 10px;
 }
