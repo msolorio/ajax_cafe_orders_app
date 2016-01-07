@@ -2,8 +2,13 @@
 GENERAL STYLES
 ****************************/
 
+@light-grey: #F7F8F8;
+@medium-grey: #E2E4E4;
+@medium-green: rgb(90, 173, 85);
+@dark-green: #2F4C27;
+
 body {
-    background: #F7F8F8;
+    background: @light-grey;
 }
 
 .section-wrap {
@@ -36,7 +41,7 @@ CURRENT ORDERS
 }
 
 .current-order-single {
-    background: #E2E4E4;
+    background: @medium-grey;
     margin: 8px 0;
     padding: 13px;
     width: 430px;
@@ -48,6 +53,7 @@ CURRENT ORDERS
     font-size: 2.6em;
     position: relative;
     top: -8px;
+    cursor:pointer;
 }
 
 
@@ -56,8 +62,8 @@ ADD ORDER
 ****************************/
 
 #add-order {
-    background: rgb(90, 173, 85);
+    background: @medium-green;
     color: #fff;
-    border: 2px solid #2F4C27;
+    border: 2px solid @dark-green;
     padding: 10px;
 }
