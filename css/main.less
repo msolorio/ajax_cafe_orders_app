@@ -1,5 +1,6 @@
 @import "normalize.min.less";
 @import "colors.less";
+@import "mixins.less";
 
 /****************************
 GENERAL STYLES
@@ -52,6 +53,7 @@ CURRENT ORDERS
     padding: 13px;
     width: 430px;
     max-width: 92%;
+    .roundedCorners();
 }
 
 .cross {
@@ -62,18 +64,23 @@ CURRENT ORDERS
     top: 8px;
     cursor:pointer;
 }
-.add-order-label {
-	width:52px;
-	display:inline-block;
-}
 
 /****************************
 ADD ORDER
 ****************************/
+.add-order-label {
+	width:52px;
+	display:inline-block;
+}
 
 #add-order {
     background: @mediumGreen;
     color: #fff;
     border: 2px solid @darkGreen;
     padding: 10px;
+    .roundedCorners();
+}
+.add-order-input {
+	.roundedCorners();
+	border: 1px solid @mediumGrey;
 }
