@@ -7,7 +7,9 @@ GENERAL STYLES
 ****************************/
 
 @baseFontSize: 1em;
-
+*, *:before, *:after {
+    .boxSizing;
+}
 body {
     background: @lightGrey;
     color: @darkGrey;
@@ -29,10 +31,16 @@ body {
 }
 
 .col {
-    width: 566px;
-    max-width: 100%;
+    //width: 566px;
+    width:49%;
     display: inline-block;
     vertical-align: top;
+}
+.col1 {
+   width:60%;
+}
+.col2 {
+    width:39%;
 }
 
 
@@ -50,8 +58,8 @@ CURRENT ORDERS
     background: @mediumGrey;
     margin: 8px 0;
     padding: 13px;
-    width: 430px;
-    max-width: 92%;
+    width: 92%;
+    max-width: 430px;
     .roundedCorners(10px);
 }
 
@@ -82,4 +90,17 @@ ADD ORDER
 .add-order-input {
 	.roundedCorners();
 	border: 1px solid @mediumGrey;
+}
+
+@media only all and (max-width: 1024px){
+    .col, .h2 {
+        width:100%;
+        max-width:477px;
+        display:block;
+        margin:0 auto;
+    }
+    .col1 {
+
+    }
+
 }
