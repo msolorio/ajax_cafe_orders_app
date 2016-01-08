@@ -231,7 +231,7 @@ CURRENT ORDERS
   background: #e4e6e6;
   margin: 8px 0;
   padding: 13px;
-  width: 92%;
+  width: 100%;
   max-width: 430px;
   border-radius: 10px;
   -moz-border-radius: 10px;
@@ -273,6 +273,11 @@ ADD ORDER
     width: 100%;
     max-width: 477px;
     display: block;
+  }
+  .h2 {
+    margin: 20px auto;
+  }
+  .col {
     margin: 0 auto;
   }
 }
